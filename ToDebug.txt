@@ -1,0 +1,7 @@
+For debugging you must copy the files inside
+%ProgramFiles(x86)%\Microsoft Visual Studio 9.0\VC\redist\Debug_NonRedist\amd64\Microsoft.VC90.DebugCRT
+in out64
+and the files inside
+%ProgramFiles(x86)%\Microsoft Visual Studio 9.0\VC\redist\Debug_NonRedist\x86\Microsoft.VC90.DebugCRT
+in out
+(all files not only ddl)

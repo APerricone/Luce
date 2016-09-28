@@ -1,0 +1,192 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Italian (Italy) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+#ifdef _WIN32
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""luce.pipl""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_LUCEOPT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 360
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 217
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 326
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_LAMP                CURSOR                  "lamp.cur"
+IDC_PICK                CURSOR                  "pick.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LUCEOPT DIALOGEX 0, 0, 367, 224
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Luce by Antonino Perricone"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",ID_PREVIEW_AREA,"Static",SS_GRAYFRAME,5,5,135,185
+    GROUPBOX        "Light type",IDC_STATIC,150,5,100,60
+    CONTROL         "Point",IDC_POINT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,160,20,32,10
+    CONTROL         "Directional",IDC_DIRECTIONAL,"Button",BS_AUTORADIOBUTTON,160,35,49,10
+    CONTROL         "Quadric Attenuation",IDC_QUADRATIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,50,79,10
+    LTEXT           "X:",IDC_XLABEL,255,15,8,8
+    LTEXT           "Y:",IDC_YLABEL,255,30,8,8
+    EDITTEXT        IDC_XPOS,270,10,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_YPOS,270,25,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SCALESELECT,315,18,45,40,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Angle",IDC_ANGLELABEL,270,15,19,8
+    EDITTEXT        IDC_ANGLE,265,25,40,14,ES_AUTOHSCROLL
+    LTEXT           "°",IDC_ANGLEDEGREE,305,28,8,8
+    CONTROL         "Custom1",IDC_ANGLESELECT,"DialControl",WS_TABSTOP,320,10,35,30
+    GROUPBOX        "Algorithm type",IDC_STATIC,150,65,100,50
+    CONTROL         "Zero(Original)",IDC_ZERO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,160,80,58,10
+    CONTROL         "Light form",IDC_LIGHTFORM,"Button",BS_AUTORADIOBUTTON,160,95,47,10
+    GROUPBOX        "Scale",IDC_STATIC,150,115,100,85
+    LTEXT           "Light:",IDC_STATIC,160,140,20,8
+    EDITTEXT        IDC_LIGHTINTENSITY,200,126,45,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIGHTINTENSITY_SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,155,140,90,15
+    LTEXT           "Shadow:",IDC_STATIC,160,170,27,8
+    EDITTEXT        IDC_SHADOWINTENSITY,200,166,45,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SHADOWINTENSITY_SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,155,180,90,15
+    GROUPBOX        "Zero options",IDC_ZEROLABEL,255,45,105,115
+    LTEXT           "Color:",IDC_COLORLABEL,267,60,35,8
+    EDITTEXT        IDC_VALUE,310,55,45,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    CONTROL         "",IDC_SRC_GRAY,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | TBS_NOTICKS | WS_TABSTOP,265,70,90,15
+    CONTROL         "Button1",IDC_COLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,310,55,45,14
+    LTEXT           "Mask:",IDC_MASKLABEL,265,96,20,8
+    EDITTEXT        IDC_MASK,311,90,45,14,ES_AUTOHSCROLL
+    CONTROL         "Normalize light",IDC_LIGHTNORMALIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,265,110,65,10
+    CONTROL         "Normalize shadow",IDC_SHADOWNORMALIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,265,126,73,10
+    CONTROL         "Pick",IDC_PICK,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,260,140,95,15
+    GROUPBOX        "Source options",IDC_STATIC,255,165,105,55
+    CONTROL         "Add source",IDC_ADDSOURCE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,265,176,45,10
+    CONTROL         "Apply zero",IDC_ZEROTOBLACK,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,265,190,45,10
+    CONTROL         "Normalize",IDC_SRCNORMALIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,265,205,70,10
+    DEFPUSHBUTTON   "OK",1,15,195,45,20
+    PUSHBUTTON      "Cancel",2,95,195,40,20
+    COMBOBOX        IDC_NUMTHREAD,200,205,35,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Threads:",IDC_STATIC,165,208,30,8
+    LTEXT           "Light:",IDC_STATIC,160,130,27,8
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 333, 246
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ABOUT               BITMAP                  "about.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_LUCEOPT DLGINIT
+BEGIN
+    IDC_NUMTHREAD, 0x403, 2, 0
+0x0031, 
+    IDC_NUMTHREAD, 0x403, 2, 0
+0x0032, 
+    IDC_NUMTHREAD, 0x403, 2, 0
+0x0033, 
+    IDC_NUMTHREAD, 0x403, 2, 0
+0x0034, 
+    IDC_NUMTHREAD, 0x403, 2, 0
+0x0035, 
+    IDC_NUMTHREAD, 0x403, 2, 0
+0x0036, 
+    IDC_NUMTHREAD, 0x403, 2, 0
+0x0037, 
+    0
+END
+
+#endif    // Italian (Italy) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "luce.pipl"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

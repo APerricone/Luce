@@ -1,0 +1,114 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Italian (Italy) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+#ifdef _WIN32
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 162, 234
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "Disabled",IDC_STATIC,35,10,35,8
+    CONTROL         "Custom1",IDC_DISABLED,"DialControl",WS_DISABLED | WS_TABSTOP,35,20,35,30
+    CTEXT           "Enabled:",IDC_STATIC,81,10,34,8
+    CONTROL         "Custom1",IDC_ENABLED,"DialControl",WS_TABSTOP,81,20,35,30
+    LTEXT           "DCN_CHANGING",IDC_STATIC,10,60,54,8
+    LTEXT           "DCN_CHANGING",IDC_CHANGING_READ,80,60,54,8
+    LTEXT           "DCN_CHANGED",IDC_STATIC,10,75,51,8
+    LTEXT           "DCN_CHANGING",IDC_CHANGED_READ,80,75,54,8
+    EDITTEXT        IDC_EDIT1,10,90,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "DCM_SETVALUE",IDC_BUTTON1,60,90,60,14
+    LTEXT           "Other shapes:",IDC_STATIC,10,110,47,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,10,126,95,35
+    CONTROL         "Custom1",IDC_HORIZONTAL,"DialControl",WS_TABSTOP,15,131,85,25
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,110,126,45,59
+    CONTROL         "Custom1",IDC_VERTICAL,"DialControl",WS_TABSTOP,115,130,35,50
+    CONTROL         "Custom1",IDC_BIG,"DialControl",WS_TABSTOP,15,170,85,51
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,10,165,95,60
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,110,190,45,35
+    CONTROL         "Custom1",IDC_VERTICAL2,"DialControl",WS_TABSTOP,115,195,35,25
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 155
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Italian (Italy) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

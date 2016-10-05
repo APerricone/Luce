@@ -61,7 +61,7 @@ CRepetitiveThread::~CRepetitiveThread()
 {
 	bFinish = true;
 	LeaveCriticalSection(&waitToStart);
-	WaitForMultipleObjects(1,&hThread,TRUE,INFINITE);
+	WaitForSingleObject(hThread,INFINITE);
 	//
 	DeleteCriticalSection(&waitToStart);
 	DeleteCriticalSection(&working);
